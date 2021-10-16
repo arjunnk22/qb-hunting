@@ -34,7 +34,7 @@ AddEventHandler('QBCore:Server:sellhunt', function()
                   local _source = source
                   local xPlayer = QBCore.Functions.GetPlayer(source)
                   local ItemA = xPlayer.Functions.GetItemByName('meat')
-                  local MeatPrice = 175
+                  local MeatPrice = 2000
                   local MeatQuantity = ItemA.amount
                   if MeatQuantity > 0  then
                       xPlayer.Functions.AddMoney("cash", MeatQuantity * MeatPrice, "sold-pawn-items")
@@ -54,7 +54,7 @@ AddEventHandler('QBCore:Server:sellhunt', function()
     local _source = source
     local xPlayer = QBCore.Functions.GetPlayer(source)
     local ItemB = xPlayer.Functions.GetItemByName('leather')
-    local LeatherPrice = 150
+    local LeatherPrice = 2100
     local LeatherQuantity = ItemB.amount
     
     if LeatherQuantity > 0 then
